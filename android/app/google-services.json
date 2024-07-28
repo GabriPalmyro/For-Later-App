@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "718106259455",
+    "project_id": "forlaterapp",
+    "storage_bucket": "forlaterapp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:718106259455:android:a8855c74a6cb10a57d01ca",
+        "android_client_info": {
+          "package_name": "com.palmyro.for_later_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "718106259455-6h0ht25dus5o6moihua0t9ibel72ofm9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBlHswAt_qaBrSvDNd1I1bC7yK1YA5Iyq8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "718106259455-6h0ht25dus5o6moihua0t9ibel72ofm9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
