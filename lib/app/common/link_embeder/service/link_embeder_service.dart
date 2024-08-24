@@ -1,4 +1,5 @@
 import 'dart:async';
+import 'dart:developer';
 
 import 'package:flutter/widgets.dart';
 import 'package:for_later_app/app/common/link_embeder/domain/link_embeder_interactor.dart';
@@ -19,11 +20,12 @@ class LinkEmbederService extends ChangeNotifier {
   late StreamSubscription<List<SharedMediaFile>> _intentSub;
 
   void initListenToSharedLinks() {
+    log('initListenToSharedLinks');
     // Listen to media sharing coming from outside the app while the app is in the memory.
     _intentSub = _interactor.getMediaStream().listen(
       (value) async {
         final url = value.first.path;
-        _appNavigator.push(route: Routes.newItem, pathParameters: {'url': url});
+        _appNavigator.push(route: Routes.newItem, queryParameters: {'url': url});
       },
     );
 
@@ -32,7 +34,7 @@ class LinkEmbederService extends ChangeNotifier {
       (value) async {
         if (value.isNotEmpty) {
           final url = value.first.path;
-          _appNavigator.push(route: Routes.newItem, pathParameters: {'url': url});
+          _appNavigator.push(route: Routes.newItem, queryParameters: {'url': url});
         }
       },
     );

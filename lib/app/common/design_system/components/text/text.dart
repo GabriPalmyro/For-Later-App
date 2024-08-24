@@ -2,8 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:for_later_app/app/common/design_system/core/theme/ds_theme.dart';
 
 class DSText extends StatelessWidget {
-  const DSText({required this.text, this.style, this.textAlign, super.key});
-
+  const DSText(this.text, { this.style, this.textAlign, super.key});
   final String text;
   final TextStyle? style;
   final TextAlign? textAlign;

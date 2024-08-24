@@ -5,6 +5,7 @@ abstract class AppNavigator {
   Future<void> push({
     required Routes route,
     Map<String, String>? pathParameters,
+    Map<String, dynamic>? queryParameters,
   });
 }
 
@@ -16,9 +17,10 @@ class AppNavigatorImpl implements AppNavigator {
   Future<void> push({
     required Routes route,
     Map<String, String>? pathParameters,
+    Map<String, dynamic>? queryParameters,
   }) async =>
       navigator.pushNamed(
         route.name,
-        pathParameters: pathParameters ?? {},
+        queryParameters: queryParameters ?? {},
       );
 }

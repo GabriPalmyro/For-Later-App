@@ -27,7 +27,7 @@ class NewItemAppBar extends StatelessWidget {
       bottom: PreferredSize(
         preferredSize: const Size.fromHeight(0.0),
         child: Container(
-          height: 32.0,
+          height: 50.0,
           alignment: Alignment.center,
           decoration: const BoxDecoration(
             color: Colors.white,
